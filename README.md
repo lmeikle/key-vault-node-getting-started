@@ -26,3 +26,8 @@ https://laura-dev-app-service.azurewebsites.net
 
 To view the secret hit this page:
 https://laura-dev-app-service.azurewebsites.net/keyvault
+
+To resolve deployment errors:<br>
+It seems that if you set these environment variables in you App Service Settings, everything runs smoothly. You just have to use versions that match.
+WEBSITE_NODE_DEFAULT_VERSION=12
+WEBSITE_NPM_DEFAULT_VERSION=6
