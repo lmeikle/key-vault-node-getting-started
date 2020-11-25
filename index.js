@@ -40,7 +40,15 @@ client.setSecret(vaultUri, secretName, value, optionsopt).then((results) => {
 })*/
 
 let secretName = 'my-test-secret'
+let secret = ''
 let secretVersion = '' //leave this blank to get the latest version;
 client.getSecret(vaultUri, secretName, secretVersion).then((result) => {
   console.log(result);
+  secret = result
 })
+
+function getSecret() {
+    return secret
+}
+
+module.exports = getSecret;

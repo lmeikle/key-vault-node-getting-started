@@ -1,5 +1,7 @@
 # Quickstart: Set and retrieve a secret from Azure Key Vault using a Node Web App (App Service)
 
+Scaffold express app quickly using 'npx express-generator myExpressApp'
+
 https://docs.microsoft.com/en-gb/samples/azure-samples/key-vault-node-getting-started/quickstart-set-and-retrieve-a-secret-from-azure-key-vault-using-a-node-web-app/
 
 https://medium.com/@ayanfecrown/azure-key-vault-node-js-step-by-step-tutorial-af131a78e220
@@ -20,4 +22,7 @@ Setup the auth stuff:<br>
 	https://medium.com/@ayanfecrown/azure-key-vault-node-js-step-by-step-tutorial-af131a78e220
 	
 Deployed to:<br>
-https://laura-dev-app-service.azurewebsites.net/
+https://laura-dev-app-service.azurewebsites.net
+
+To view the secret hit this page:
+https://laura-dev-app-service.azurewebsites.net/keyvault
