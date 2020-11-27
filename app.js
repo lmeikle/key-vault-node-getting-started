@@ -23,10 +23,10 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 var keyVaultRouter = express.Router();
-var getSecret = require('./index');
+var getSecret = require('./key-vault-using-azure-identity');
 keyVaultRouter.get('/', function(req, res, next) {
   const secret = getSecret()
-  res.render('index', { title: 'Secret: ' + secret.value });
+  res.render('index', { title: 'Secret Using Azure Identity: ' + secret.value });
 });
 app.use('/keyvault', keyVaultRouter);
 
